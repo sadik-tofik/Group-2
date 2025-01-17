@@ -1,0 +1,279 @@
+
+*{
+  font-family: sans-serif;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+
+.header{
+  /* text-align: center; */
+  /* color: #fff; */
+  /* text-transform: uppercase; */
+  /* padding-bottom: 3.5rem; */
+  /* font-size: 4rem; */
+  /* font-family: "Dancing Script", cursive; */
+}
+
+.header-break{
+  border-bottom: 4px dotted white;
+  width: 20%;
+  margin: 20px auto 10px;
+}
+
+.sub-header{
+  margin-top: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+body{
+  /* background-color: #709CE6; */
+  background-color: #79BAE5;
+  color: #F7FAFC;
+  /* display: flex;
+  justify-content:center ;
+  align-items: center; */
+}
+
+label{
+font-size: 15px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+a{
+  color:#3173e6;
+}
+
+.common-img{
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+
+div{
+  background-color: #709CE6;
+ /* background-color: #79BAE5; */
+    border-radius: 10px;
+}
+
+.common-container{
+  padding: 20px;
+  /* display: flex;
+  justify-content:center ;
+  align-items: center; */
+}
+
+.round-section{
+  margin: auto 3%;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+  color: #fff; 
+  text-transform : uppercase;
+  /* padding-bottom: 3.5rem; */
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h2{
+  font-size: 23px;
+font-weight: 400;
+font-family: "Josefin Sans", sans-serif;
+}
+
+.form-space{
+  padding: .75rem 0;
+  border: 2px solid #07183b;
+  border-radius: 0.375rem; 
+   background-color: #ffffffaf;
+   margin: 10px 10px 0 20px;
+   height: 30px;
+   width: 200px;
+}
+
+.book-now-btn{
+  margin-top: 10px;
+    padding: 10px;
+    width: 15%;
+    border:3px solid #79BAE5;
+    border-radius: 10px;
+    background-color: #709CE6;
+    color: #fff;
+}
+
+.book-now-btn:hover{
+ background-color: #79BAE5;
+ color:#ffffff;
+}
+
+.book-now{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+
+
+.your-travel{
+  padding-left: 5%;
+    margin-top: 25px;
+}
+
+.passenger-information{
+  padding-left: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.payment-information{
+  padding-left: 5%;
+    margin-bottom: 50px;
+}
+
+.payment-information .form-space{
+  margin-bottom: 10px;
+}
+
+.submit-booking{
+  margin-bottom: 20px;
+}
+  
+/* .dropdown {
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+
+  .dropdown .dropbtn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 15%;
+    border:1px solid #4582eb;
+    border-radius: 10px;
+    background-color: #4582eb;
+    color: #fff;
+  }
+  .dropdown .dropbtn:hover{
+    border-bottom: solid 5px black;
+    border-right:solid 3px black ;
+    cursor: pointer;
+    box-shadow: #07183b;
+  }
+
+  .dropdown-content {
+    display: none; 
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display:block;
+    cursor: pointer;
+    margin-top: 10px;
+  }  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.dropdown-button {
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border:1px solid #79BAE5;
+    border-radius: 10px;
+    background-color: #4582eb;
+    color: #fff;
+}
+
+.dropdown-button .icon {
+    margin-left: 10px;
+}
+
+#dropdownSearch {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+
+#dropdownItems {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+
+}
+
+.dropdown-item {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+  .form-space{
+    display: block;
+    transition: 0.5s;
+  }
+}

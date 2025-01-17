@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+   <link rel="stylesheet" href="css/booking.css">
+
+   <link
+   rel="stylesheet"
+   href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+   integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+   crossorigin="anonymous"
+ />
+ <link
+   href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+   rel="stylesheet"
+ />
+</head>
+
+<body>
+
+<section class="round-section">
+
+    <header>
+        <h1>Travel Booking</h1> 
+        <hr class="header-break">
+        <p class="sub-header">Get your travel plans sorted in minutes</p>
+    </header>
+ 
+    <div class="your-travel common-container">
+
+            <h2>Your Travel</h2>
+
+            <form>
+                <span><img class="common-img departure-img"  src="images/departure.png" alt="departure-img"> </span><label for="From">From: </label>
+                <input type="text" name="From" class="form-space" required> <br>
+                <label for="To" ><span><img class="common-img arrival-img"  src="images/arrivals.png" alt=" arrival-img"> </span> To: </label>
+                <input type="text" name="To" class="form-space" required><br>
+                <label for="Date"> <span><img src="images/calendar.png" alt="date-img" class="common-img date-img"></span> Date: </label> 
+                <input type="date" name="" class="form-space" value="none" required><br>
+                <label for="Passenger"> <span><img src="images/tourist.png" alt="passengers-img" class="common-img passengers-img"></span> Passengers: </label>
+                <input type="number" name="Passengers" class="form-space" required>
+        
+            </form>
+                  
+    </div>
+
+<div class="passenger-information common-container"> 
+
+    <form>
+        <h2>Passenger Information</h2>
+        <label for="name" required> <span><img src="images/user.png" alt="name-img" class="name-img common-img"></span> Name:</label>
+        <input type="text" name="name" class="form-space" required><br>
+        <label for="phone-number"> <span><img src="images/phone.png" alt="phone-img" class="phone-img common-img" span> Phone number:</label>
+        <input type="number" name="phone-number" class="form-space" required><br>
+        <label for="email"> <span><img src="images/email (1).png" alt="email-img" class="email-img common-img"></span> Email:</label>
+        <input type="email" id="email" name="email" class="form-space" required>
+</form>
+
+</div>
+
+
+     <div class="payment-information common-container">
+
+        <form>
+            <h2>Payment Information</h2>
+            <label> <span><img src="images/credit-card.png" alt="debitCard-img" class="debitCard-img common-img"></span> credit/debit card:</label>
+            <input type="number" class="form-space"> <br>
+<!--           
+            <div class="dropdown">
+
+                <button class="dropbtn"> Bank Transfer </button>
+                <div class="dropdown-content">
+
+                    <input type="radio" name="bank" required>
+                    <label>Commercial Bank of Ethiopia</label>
+                    <input type="radio" name="bank" required>
+                    <label>Awash Bank</label>
+                    <input type="radio" name="bank" required>
+                    <label>Oromia Bank</label>
+
+                </div>
+
+              </div> -->
+
+
+
+              <!-- dropdown starts here -->
+
+              <div class="dropdown">
+                <button class="dropdown-button" onclick = "toggleDropdown()"> Select Bank▼
+        
+                </button>
+                <div id="dropdownItems">
+                    <input type="text"  id="dropdownSearch"  placeholder="Search...">
+                    <div class="dropdown-item">Awash Bank</div>
+                    <div class="dropdown-item">Abyssinia Bank</div>
+                    <div class="dropdown-item">Commercial Bank of Ethiopia (CBE)</div>
+                    <div class="dropdown-item">Dashen Bank</div>
+                    <div class="dropdown-item">Oromia Bank</div>
+                </div>
+            </div>
+
+               <!-- dropdown ends here -->
+
+          <br>  <label for="Bank-transfer"> <span><img src="images/card.png" alt="account-img"  class="account-img common-img"></span> Enter Account Number:</label>
+            <input type="number" class="form-space" >
+         </form>  
+     </div>
+
+     
+       
+       
+    <div class="submit-booking common-container">
+
+      <div class="terms-and-conditions">
+            <input type="checkbox" id="terms" name="terms" >
+            <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label><br>
+      </div>
+
+        <div class="book-now button">
+            <button class="book-now-btn" type="submit" >Book Now</button>
+        </div>
+        
+    </div>
+
+</section>
+
+<script type="script" src="js/booking.js"></script>
+
+</body>
+</html>
